@@ -1,0 +1,67 @@
+-- LIST FILES
+
+ls
+
+-- NEW DIRECTORY
+
+mkdir "XXX"
+
+-- DELETE
+
+rm "XXX"
+
+-- INSTALL 
+
+sudo apt-get install "XXX"
+
+-- UPDATE
+
+sudo apt-get update "XXX"
+
+-- NEW PATH
+
+export SPARK_HOME="~/handoop/XXX"
+export PATH="$SPARK_HOME/bin":$PATH
+
+-- 
+
+tar -xvzf "XXX" -c ~/"XXX"
+
+-- CONFIG GITHUB
+
+git config --global user.name "nombre_usuario"
+git config --global user.email "email_id"
+
+-- INITIALIZED GIT REPOSITORY
+
+git init
+
+-- ADD FILES
+
+git add .
+
+-- COMMIT AND ADD MESSAGE
+
+git commit -m "first commit"
+
+-- ADD GITHUB
+
+git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+
+
+-- PUSH
+
+-- STATUS
+
+git status
+
+--GIT COMMANDS
+
+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
+
+git pull origin main
+git pull origin main --allow-unrelated-histories
+
+
+
+git push -u origin main
