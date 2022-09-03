@@ -48,20 +48,27 @@ git commit -m "first commit"
 
 git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
 
-
--- PUSH
-
 -- STATUS
 
 git status
 
 --GIT COMMANDS
 
-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
-
-git pull origin main
-git pull origin main --allow-unrelated-histories
-
-
+git pull origin master
 
 git push -u origin main
+
+## Download Docker SQL2019
+sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
+
+## Install Docker container
+docker run -d --name sql_server_mac -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=miContrasena123' -p 1433:1433 mcr.microsoft.com/mssql/server:2019-latest
+
+## Create a folder inside the Docker container
+sudo docker exec -it sql_server_mac mkdir /var/opt/mssql/backup
+
+## Copy the database .bak file into that folder:
+sudo docker cp WideWorldImportersDW-Full.bak sql_server_mac:/var/opt/mssql/backup
+
+## Token GitHub
+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
